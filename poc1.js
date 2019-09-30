@@ -15,7 +15,7 @@ var xhr = new XMLHttpRequest();
 xhr.open("POST", 'https://devcloud.huaweicloud.com/codehub/v1/key/uploadSShKey?_=1569849057881', true);
 xhr.setRequestHeader('cftk',devclouddevui420cftk);
 xhr.withCredentials= true;
-xhr.setRequestHeader('content-type', 'application/json');
+xhr.setRequestHeader('content-type', 'text/plain');
 xhr.onload = function () {};
 var data = {"title":"1","key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5id2Vj6og8fe7ZwPkL7x4vJjLGuvDRW8HaWFfRIN/d0++ppHIjzTZKMZl25Ff8MyNYXB9MdkGcvjP1nRYf4jppDjzQm0zHuIgQcGPdNQV4qK2YTopshc+iisFaxMus3nWGpwKo41lPo23TC4rwg0EQB4m5ph6/jhUUkOaN0IoyKVcHiH52ReA4l7m5SH9BA3rd6W4shNfcbIgdQpR4MLpEC9ut/HMLcVfeF412nO3mAGQ3KDtv8v/OKI+Bm4nXHmUPgFLBHJ2S1Qvy3nQ4fXiosyymRmZpetBnPBfVZI6yxGbM9lpVZNW20gGGUvuDFPxiWPhYwcR2rg+MqL4yU+9 test@test.com"};
 xhr.send(JSON.stringify(data));
